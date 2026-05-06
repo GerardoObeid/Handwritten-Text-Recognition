@@ -1,0 +1,16 @@
+pycache/
+.python-version
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.csv
+*.h5
+*.ckpt
