@@ -1,4 +1,4 @@
-# Handwritten Text Recognition (HTR) Pipeline
+# Handwritten Text Recognition (HTR)
 
 ## 📖 Project Overview
 
@@ -28,3 +28,19 @@ Handwritten-Text-Recognition/
 ├── .gitignore              # Ignores large datasets, weights, and caches
 └── README.md               # Project documentation
 ```
+
+## 🧠 Visualization & Model Interpretability
+
+One of the core strengths of this custom architecture is its interpretability. By extracting and visualizing the intermediate states of the network, we can observe exactly how the model "reads" a document.
+
+### Iterative Attention Mechanism
+
+![Line Attention Visualization](results/htr_lectura.gif)
+
+_The `IterativeWeightedCollapse` module in action. The heatmap shows the spatial attention mechanism successfully navigating the 2D canvas, isolating a single line of unconstrained handwritten text. By effectively ignoring large areas of blank padding and background noise, it perfectly crops the temporal sequence before passing it to the CTC decoder._
+
+### Spatial Feature Maps
+
+![Channel Visualization](results/visualizacion_canales.png)
+
+_Internal feature maps and activation channels from the CNN backbone and `RowColLSTM`. This visualization demonstrates how the network extracts structural patterns, stroke geometry, and spatial hierarchies from the raw image pixels prior to the attention phase._

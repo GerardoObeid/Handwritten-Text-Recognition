@@ -11,7 +11,7 @@ from itertools import zip_longest
 
 # Importaciones Modulares
 from data.dataset import IAMParagraphDataset, collate_fn_paragraphs
-from models.htr_network import FullParagraphHTR
+from models.htr import FullParagraphHTR
 from utils.metrics import NUM_CLASES, decodificar_prediccion, calcular_metricas_jiwer, idx_a_char
 
 # PARCHE DE MEMORIA

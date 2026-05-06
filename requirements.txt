@@ -1,0 +1,18 @@
+# PyTorch (Core ML Framework)
+torch>=2.0.0
+torchvision
+
+# Data Manipulation & Math
+numpy
+pandas
+
+# Image Processing
+opencv-python-headless  # Headless es mejor para servidores/Kaggle/Colab
+
+# Metrics & Evaluation
+jiwer
+scikit-learn
+
+# Utilities
+tqdm
+matplotlib
